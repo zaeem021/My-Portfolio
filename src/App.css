@@ -1,0 +1,120 @@
+:root {
+  /* Light Mode Variables */
+  --bg-color: #f0f4f8;
+  --text-color: #333;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --card-bg: #ffffff;
+  --card-border: #ddd;
+  --accent-color: #00d8ff;
+  --hero-bg: #ffffff;
+  --hero-text: #333;
+  --hero-subtitle: #555;
+  --input-bg: #ffffff;
+  --input-border: #ccc;
+  --input-text: #333;
+}
+
+body.dark {
+  /* Dark Mode Variables */
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #bb86fc;
+  --secondary-color: #a0a0a0;
+  --card-bg: #1e1e1e;
+  --card-border: #333;
+  --accent-color: #00d8ff;
+  --hero-bg: #121212;
+  --hero-text: #ffffff;
+  --hero-subtitle: #bbbbbb;
+  --input-bg: #222;
+  --input-border: #444;
+  --input-text: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ==========================================
+   GLOBAL COMPONENT STYLES
+   ========================================== */
+
+/* Hero Section */
+.hero {
+  background: var(--hero-bg);
+  color: var(--hero-text);
+}
+
+.hero-title {
+  color: var(--hero-text);
+}
+
+.hero-subtitle {
+  color: var(--hero-subtitle);
+}
+
+.hero-btn {
+  color: var(--bg-color);
+  /* Text color on button usually contrasts button bg */
+  background: var(--primary-color);
+}
+
+.hero-image {
+  border-color: var(--card-border);
+}
+
+/* Projects Section */
+.projects {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.project-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--card-border);
+}
+
+.project-card a {
+  background: var(--primary-color);
+  color: var(--bg-color);
+}
+
+/* Skills Section */
+.skills {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.skill-box {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--card-border);
+}
+
+/* Contact Section */
+.contact {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+}
+
+.contact-icons a {
+  color: var(--primary-color);
+}

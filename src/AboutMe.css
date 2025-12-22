@@ -1,0 +1,112 @@
+.about-wrapper {
+  width: 100%;
+  background: var(--bg-color);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Single Mac Card */
+.mac-card.single-card {
+  width: 650px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 186, 255, 0.35);
+  border: 1px solid var(--card-border);
+
+  padding: 25px 30px;
+  color: var(--text-color);
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.mac-card.single-card.active {
+  opacity: 1;
+  transform: translateY(0);
+  border-color: var(--accent-color);
+}
+
+/* Mac window buttons */
+.mac-top {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.mac-circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff605c;
+}
+
+.yellow {
+  background: #ffbd44;
+}
+
+.green {
+  background: #00ca4e;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.highlight {
+  color: var(--accent-color);
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 3px;
+}
+
+.about-para {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.skills-title {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+/* Skill Bars */
+.skill-bar {
+  margin-bottom: 18px;
+}
+
+.skill-bar p {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--accent-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress {
+  width: 100%;
+  height: 8px;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0;
+  height: 100%;
+  background: var(--accent-color);
+  border-radius: 10px;
+  transition: width 2s ease;
+}

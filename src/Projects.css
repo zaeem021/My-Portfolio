@@ -1,0 +1,19 @@
+.projects {
+  padding: 60px 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease forwards;
+  color: var(--text-color);
+}
