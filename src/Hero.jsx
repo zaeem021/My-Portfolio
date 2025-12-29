@@ -34,9 +34,12 @@ const Hero = () => {
           </p>
 
           <div className="hero-buttons">
-            <a href="/resume.pdf" download className="hero-btn resume-btn">
-              Download Resume
-            </a>
+            <a
+                href={process.env.PUBLIC_URL + "/resume.pdf"}
+                download
+                className="hero-btn resume-btn">
+                Download Resume
+              </a>
             <a href="#projects" className="hero-btn portfolio-btn">
               View Projects
             </a>
